@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_velib_availability
+    description: "Table finale de reporting sur la disponibilité temps réel des Vélib par station."
+    columns:
+      - name: station_id
+        description: "Identifiant unique de la station Vélib."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: availability_rate_pct
+        description: "Taux de disponibilité des vélos en pourcentage."
+        data_tests:
+          - not_null

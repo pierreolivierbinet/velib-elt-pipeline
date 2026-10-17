@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.log
+velib_dbt/target/
+velib_dbt/dbt_packages/
+velib_dbt/logs/

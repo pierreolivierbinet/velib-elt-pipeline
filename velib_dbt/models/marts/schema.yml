@@ -14,3 +14,10 @@ models:
         description: "Taux de disponibilité des vélos en pourcentage."
         data_tests:
           - not_null
+
+      - name: station_status
+        description: "Statut opérationnel : Rupture (0 vélo), Saturée (0 bornette libre) ou Nominale."
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['Nominale', 'Rupture', 'Saturée']
